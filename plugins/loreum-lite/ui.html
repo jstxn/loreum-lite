@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loreum Lite</title>
+    <style nonce="__NONCE__">/*__STYLE__*/</style>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="#dashboard"><span class="brand-mark" aria-hidden="true">__BRAND_ICON__</span>Loreum Lite</a>
+        <div class="topbar-actions"><span class="local-label"><span class="dot"></span>On your machine</span><button type="button" id="project" class="project" aria-label="Choose project scope" disabled>Personal · Choose project</button><button type="button" id="refresh" class="icon-button" aria-label="Refresh sources" title="Refresh sources" disabled>↻</button></div>
+      </header>
+      <div class="page-heading"><h1 id="page-title">Your Codex setup</h1><p id="subtitle">Your Codex context, skills, tools, and hooks. All in one place.</p></div>
+      <section id="loading" class="loading" role="status" aria-live="polite" aria-busy="true"><div id="loading-indicator" class="loading-dots" aria-hidden="true"><span></span><span></span><span></span></div><h2 id="loading-title">Loading your context</h2><p id="loading-message">Reading your local sources. This can take a moment.</p><button type="button" id="retry" hidden>Retry</button></section>
+      <nav aria-label="Context views" id="nav" hidden></nav>
+      <div class="workspace" id="workspace" hidden>
+        <section class="browser" aria-label="Stored sources">
+          <div class="list-toolbar"><label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input type="search" id="search" aria-label="Search sources" placeholder="Search context…" /></label><div class="list-options"><p id="list-summary">Local sources</p><label id="disabled-option"><input type="checkbox" id="show-disabled" /> Show disabled</label></div></div>
+          <div id="content"></div>
+        </section>
+        <aside class="preview" aria-label="Source preview">
+          <section id="detail" hidden aria-labelledby="detail-title"><div class="detail-topline"><span id="detail-type">Source</span><button type="button" id="close-detail" class="icon-button" aria-label="Clear preview">×</button></div><h2 id="detail-title">Source</h2><p id="detail-description"></p><p class="path" id="detail-path"></p><div class="detail-actions"><button type="button" id="copy">Copy excerpt</button><button type="button" id="attach" hidden>Use in this chat</button><button type="button" id="more" hidden>Next excerpt</button></div><p id="detail-status" role="status" aria-live="polite"></p><div id="detail-body"></div></section>
+        </aside>
+      </div>
+      <footer><span id="status" role="status" aria-live="polite">Reading local sources…</span><span id="coverage">Read-only local sources</span></footer>
+    </main>
+    <dialog id="project-dialog" aria-labelledby="project-heading"><form id="project-form"><h2 id="project-heading">Choose project context</h2><p>Your personal Codex sources are always included. A project adds its instructions, skills, tools, and hooks.</p><label for="project-path">Project folder</label><input type="text" id="project-path" placeholder="/path/to/your/project" autocomplete="off" spellcheck="false" required /><p class="note">Enter the repository or working folder to inspect. This selection lasts for this viewer session.</p><p id="project-error" role="alert"></p><div class="detail-actions"><button type="submit" id="select-project">Use project</button><button type="button" id="personal-scope">Personal only</button><button type="button" id="cancel-project">Cancel</button></div></form></dialog>
+    <script nonce="__NONCE__">globalThis.LOREUM_LITE = __BOOTSTRAP__;</script>
+    <script nonce="__NONCE__">__SCRIPT__</script>
+  </body>
+</html>

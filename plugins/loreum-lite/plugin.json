@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "loreum-lite",
+  "version": "0.3.5",
+  "description": "A personal, read-only inventory of context, skills, tools, plugins, and hooks stored locally for Codex.",
+  "author": {
+    "name": "jstxn"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Loreum Lite",
+        "shortDescription": "Your local agent context",
+        "longDescription": "Browse local memories, instructions, skills, tools, plugins, and hooks in one searchable inventory. See their origins and locations, with optional recorded activity. Source files stay unchanged.",
+        "developerName": "jstxn",
+        "category": "Productivity",
+        "logo": "./assets/icon.svg",
+        "composerIcon": "./assets/icon.svg",
+        "capabilities": ["Interactive"],
+        "defaultPrompt": "Open my Loreum Lite personal context dashboard."
+      }
+    }
+  }
+}

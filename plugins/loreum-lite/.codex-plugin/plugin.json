@@ -1,0 +1,16 @@
+{
+  "name": "loreum-lite",
+  "version": "0.3.5",
+  "description": "A personal, read-only inventory of context, skills, tools, plugins, and hooks stored locally for Codex.",
+  "mcpServers": "./mcp.json",
+  "interface": {
+    "displayName": "Loreum Lite",
+    "shortDescription": "Your local agent context",
+    "developerName": "jstxn",
+    "category": "Productivity",
+    "logo": "./assets/icon.svg",
+    "composerIcon": "./assets/icon.svg",
+    "capabilities": ["Interactive"],
+    "defaultPrompt": "Open my Loreum Lite personal context dashboard."
+  }
+}
